@@ -351,6 +351,356 @@
    "topic": "チャネルと公開",
    "volatile": false,
    "createdAt": "2026-11-09"
+  },
+  {
+   "q": "専用のアカウントを与えられて、プロアクティブに作業できるエージェントの利用例として、適切なものはどれか。",
+   "choices": [
+    "Dataverse のテーブルに列を追加して、リレーションシップを設定すること",
+    "canvas app の画面のレイアウトを、手作業で整えること",
+    "新入社員のオンボーディングや、定期的な会議の調整",
+    "Power Pages のサイトの外観を、テーマで変更すること"
+   ],
+   "answer": 2,
+   "explanation": "Copilot Studio のエージェントの中には、専用のアカウントを与えられて、プロアクティブに作業できるものがあります。たとえば、新入社員のオンボーディングや、定期的な会議の調整が挙げられています。",
+   "topic": "エージェントのユースケース",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio の Customer Conversation harness の用途として、適切なものはどれか。",
+   "choices": [
+    "音声とチャットで、顧客の質問に答え、問題を解決するエージェント",
+    "画面操作を記録して、デスクトップ アプリを自動化する仕組み",
+    "Dataverse のテーブルに対する、セキュリティ ロールの設計",
+    "Power BI のレポートを作成して、社内に公開する仕組み"
+   ],
+   "answer": 0,
+   "explanation": "Customer Conversation harness は、音声とチャットで顧客の質問に答え、問題を解決するエージェント向けです。ほかに、GitHub Copilot harness と standard harness があります。",
+   "topic": "エージェントのユースケース",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio の standard harness が向いている用途として、適切なものはどれか。",
+   "choices": [
+    "推論を多く必要とする、複数ステップの複雑な業務プロセス",
+    "音声とチャットで、顧客の問題を解決する会話",
+    "画面操作の自動化を、デスクトップ上で実行する処理",
+    "ルールに基づくエージェントと、構造化された繰り返し可能な会話"
+   ],
+   "answer": 3,
+   "explanation": "standard harness は、ルールに基づくエージェントや、構造化された繰り返し可能な会話向けです。推論を多く必要とする複数ステップの複雑な業務は GitHub Copilot harness、顧客との音声やチャットの会話は Customer Conversation harness が対象です。",
+   "topic": "エージェントのユースケース",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "GitHub Copilot harness が向いている用途として、適切なものはどれか。",
+   "choices": [
+    "ルールに基づく、構造化された繰り返し可能な会話",
+    "推論を多く必要とする、複数ステップの複雑な業務プロセス",
+    "音声とチャットだけで完結する、顧客向けの簡単な問い合わせ",
+    "デスクトップ上の画面操作の記録と再生"
+   ],
+   "answer": 1,
+   "explanation": "GitHub Copilot harness は、推論を多く必要とする複数ステップの作業や、複雑な業務プロセス向けです。ルールに基づく会話は standard harness、顧客との会話は Customer Conversation harness が対象です。",
+   "topic": "エージェントのユースケース",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Microsoft Copilot Studio の説明として、適切なものはどれか。",
+   "choices": [
+    "Dataverse のテーブルを設計するための、モデル駆動型のエディター",
+    "画面操作を記録するための、デスクトップ向けのレコーダー",
+    "AI エージェントとワークフローを構築して管理する、グラフィカルなローコードのスタジオ",
+    "Power Pages のサイトを公開するための、ホスティング サービス"
+   ],
+   "answer": 2,
+   "explanation": "Copilot Studio は、AI を活用したエージェントとワークフローを構築して管理する、グラフィカルなローコードのスタジオです。組織のデータやシステムに接続し、ユーザーが普段使うチャネルへ公開できます。",
+   "topic": "Copilot Studioの作成方法",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio でエージェントを作る方法として、適切なものはどれか。",
+   "choices": [
+    "平易な言葉でエージェントを説明して作成し、公開する前にテストする",
+    "Visual Studio Code でしか、エージェントは作成できない",
+    "Power Automate のクラウド フローとしてしか、作成できない",
+    "作成するにはまず、Power Pages のサイトを用意する必要がある"
+   ],
+   "answer": 0,
+   "explanation": "エージェントは、平易な言葉で説明して作成し、公開する前にテストできます。Copilot Studio のグラフィカルなスタジオを使い、指示、ナレッジ ソース、ツールを設定します。",
+   "topic": "Copilot Studioの作成方法",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "トピックを白紙から作成する手順として、適切なものはどれか。",
+   "choices": [
+    "Power Apps のホーム画面で、新しい canvas app を作成する",
+    "Dataverse のテーブルに、新しい行を追加して保存する",
+    "Power Automate で、新しい desktop flow を記録する",
+    "Topics ページで、Add a topic の From blank を選ぶ"
+   ],
+   "answer": 3,
+   "explanation": "トピックは、エージェントの Topics ページで、Add a topic から From blank を選んで作成します。作りたい内容を説明して、AI にトピックを作成してもらう方法もあります。",
+   "topic": "Copilot Studioの作成方法",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio の自然言語による作成（プレビュー）の説明として、適切なものはどれか。",
+   "choices": [
+    "目標の説明にかかわらず、あらかじめ決められた 1 種類のエージェントだけが作られる",
+    "ビジネス上の目標を説明すると、適切なエージェントとワークフローの組み合わせが判断される",
+    "目標を説明すると、Power Pages のサイトだけが自動で作成される",
+    "目標を説明しても、手作業での設定がなければ何も作成されない"
+   ],
+   "answer": 1,
+   "explanation": "自然言語による作成（プレビュー）では、ビジネス上の目標を説明すると、その目標を解決するために適切なエージェントとワークフローの組み合わせが判断されます。プレビューの機能は変わる可能性があるため、最新の情報を確認してください。",
+   "topic": "Copilot Studioの作成方法",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio のワークフローの説明として、適切なものはどれか。",
+   "choices": [
+    "Dataverse のテーブルの列を、数式で定義するための仕組み",
+    "画面操作を記録して再生する、デスクトップ向けの仕組み",
+    "ドラッグ アンド ドロップで作成し、エージェントやツールを組み合わせる自動化",
+    "Power Pages のサイトの外観を、テンプレートで決める仕組み"
+   ],
+   "answer": 2,
+   "explanation": "ワークフローは、ドラッグ アンド ドロップのデザイナーで作成する自動化です。各ステップでは、エージェント、ツール、ロジックを組み合わせて、推論と実行ができます。組み込みのテストと、人が確認する human-in-the-loop の制御があります。",
+   "topic": "Copilot Studioの作成方法",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio のエージェント フローの位置づけとして、適切なものはどれか。",
+   "choices": [
+    "Power Automate に似た作成体験を、Copilot Studio 内で提供するフロー形式",
+    "Power Automate とは無関係に、デスクトップ上でだけ動く自動化",
+    "Dataverse のテーブルに、自動で列を追加するだけの機能",
+    "エージェントから切り離されていて、ツールにはできない仕組み"
+   ],
+   "answer": 0,
+   "explanation": "エージェント フローは、Power Automate に似た作成体験を Copilot Studio の中で提供する、確立されたフロー形式です。単独の自動化として実行することも、エージェントにツールとして追加して結果をエージェントへ返すこともできます。",
+   "topic": "エージェントフロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "エージェント フローが実行するアクションについて、適切なものはどれか。",
+   "choices": [
+    "実行するアクションは、容量を一切消費しない",
+    "容量を消費するのは、トリガーの実行時だけである",
+    "容量を消費するのは、フローを削除するときだけである",
+    "アクションごとに、Copilot Studio の容量を消費する"
+   ],
+   "answer": 3,
+   "explanation": "エージェント フローが実行するアクションは、1 つずつ Copilot Studio の容量を消費します。フロー デザイナーやテスト チャットでのテストでは、容量を消費しません。",
+   "topic": "エージェントフロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "エージェントとエージェント フローの動き方の違いとして、適切なものはどれか。",
+   "choices": [
+    "エージェントはルールに基づく決められた経路をたどり、エージェント フローは推論して次の手を判断する",
+    "エージェントは指示に沿って推論し、次の手を判断する。エージェント フローはルールに基づく決められた経路をたどる",
+    "エージェントもエージェント フローも、実行のたびに経路を新しく推論して決める",
+    "エージェントもエージェント フローも、推論はせず、トリガーだけで動く"
+   ],
+   "answer": 1,
+   "explanation": "エージェントは、指示、ナレッジ ソース、ツールをもとに、推論して次の手を判断します。エージェント フローは、決定論的で、ルールに基づく経路をたどるため、同じ入力からは同じ出力が得られます。",
+   "topic": "会話型エージェントとフローの違い",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio で、エージェントの利用状況や効果を分析する画面は、どれか。",
+   "choices": [
+    "Dataverse の Table designer",
+    "Power Pages の Design Studio",
+    "エージェントの上部メニューの Monitor",
+    "Power Automate の Action center"
+   ],
+   "answer": 2,
+   "explanation": "エージェントを Copilot Studio で開き、上部のメニューバーで Monitor を選ぶと、分析を確認できます。トピックごとの分析は、Topics ページでトピックを選び、More から Monitor を選びます。",
+   "topic": "利用状況と導入の監視",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "トピックの Monitor パネルにある Topic outcomes のグラフが使う、セッションの結果の分類は、どれか。",
+   "choices": [
+    "Escalated、Resolved、Abandoned",
+    "Approved、Rejected、Pending",
+    "Created、Modified、Deleted",
+    "Started、Paused、Cancelled"
+   ],
+   "answer": 0,
+   "explanation": "Topic outcomes は、トピックが起動したセッションを Escalated（引き継ぎ）、Resolved（解決）、Abandoned（放棄）の 3 種類に分類します。Escalated や Abandoned の割合が高い場合は、トピックの改善が必要なことを示します。",
+   "topic": "利用状況と導入の監視",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Monitor ページのアクティブ ユーザー数（DAU や MAU）を表示するために必要なことは、どれか。",
+   "choices": [
+    "エージェントが Dataverse のテーブルを持っていること",
+    "エージェントが Power Pages のサイトに公開されていること",
+    "エージェントが desktop flow を持っていること",
+    "エージェントが認証を必須にしていること"
+   ],
+   "answer": 3,
+   "explanation": "アクティブ ユーザーの指標（DAU、MAU）を表示するには、エージェントの Settings の Security にある Authentication で、認証を必須にする必要があります。",
+   "topic": "利用状況と導入の監視",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Monitor ページを閲覧のみで共有するために、エージェントの所有者が付与するロールは、どれか。",
+   "choices": [
+    "Environment Maker",
+    "Analytics Viewer",
+    "System Administrator",
+    "Basic User"
+   ],
+   "answer": 1,
+   "explanation": "エージェントの所有者は、Analytics Viewer ロールを個人（グループではなく）に付与して、Monitor ページを閲覧専用で共有できます。トランスクリプトを見るには、Bot Transcript Viewer セキュリティ ロールも必要です。",
+   "topic": "利用状況と導入の監視",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Monitor ページに表示されない活動は、どれか。",
+   "choices": [
+    "公開したエージェントでの、認証済みユーザーとの会話",
+    "公開したエージェントでの、顧客とのセッション",
+    "テスト パネルでの活動",
+    "公開したエージェントでの、トピックの起動"
+   ],
+   "answer": 2,
+   "explanation": "テスト パネルでの活動は、Monitor ページに表示されません。公開したエージェントでの会話は、Monitor の対象です。",
+   "topic": "利用状況と導入の監視",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot Studio の Evaluations の説明として、適切なものはどれか。",
+   "choices": [
+    "テスト セットと共通の採点ライブラリで、公開の前後にエージェントの品質を検証する",
+    "公開した後にだけ、ユーザーの人数を集計する機能",
+    "エージェントを自動で削除して、環境の容量を空ける機能",
+    "Dataverse のテーブルの行を、自動で評価して削除する機能"
+   ],
+   "answer": 0,
+   "explanation": "Evaluations は、テスト セットと共通の採点ライブラリ（grader library）を使い、公開の前後にエージェントの品質を検証します。新しい機能のため、利用前に最新の情報を確認してください。",
+   "topic": "エージェント評価",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Microsoft Agent 365 の説明として、適切なものはどれか。",
+   "choices": [
+    "canvas app を、画面ごとに設計するためのデザイナー",
+    "Dataverse のテーブルを、バックアップするためのサービス",
+    "Power Automate のフローを、スケジュール実行するためのサービス",
+    "組織内の AI エージェントを、観察し、統制し、保護するためのプラットフォーム"
+   ],
+   "answer": 3,
+   "explanation": "Microsoft Agent 365 は、組織内で増え続ける AI エージェントを、観察（Observe）し、統制（Govern）し、保護（Secure）するためのプラットフォームです。",
+   "topic": "Microsoft Agent 365",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Agent 365 の agent registry の説明として、適切なものはどれか。",
+   "choices": [
+    "エージェントごとに分かれていて、組織全体での把握はできない記録",
+    "導入状況、活動、正常性を一元的に把握できる集中管理型のレジストリ",
+    "Dataverse のテーブルに保存された、フローの実行履歴の一覧",
+    "Power Pages のサイトに、訪問者の情報を保存する仕組みのこと"
+   ],
+   "answer": 1,
+   "explanation": "Agent 365 は、単一の集中管理型の agent registry を提供し、エージェントの導入状況、活動、正常性を一元的に把握できます。ライフサイクル管理やアクセス制御も、このレジストリを通じて行います。",
+   "topic": "Microsoft Agent 365",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Agent 365 の保護（Secure）で、Microsoft Entra が担う役割として、適切なものはどれか。",
+   "choices": [
+    "データ損失防止（DLP）による、データのリスクの可視化",
+    "継続的な脅威の検出と、悪意ある活動からのリアルタイムの保護",
+    "ユーザーと、ユーザーの代わりに動くエージェントに対する、リスクベースのアクセス制御",
+    "エージェントの画面を、デスクトップ上で記録する機能"
+   ],
+   "answer": 2,
+   "explanation": "Microsoft Entra は、ユーザーと、ユーザーの代わりに動くエージェントに対して、リスクベースのアクセス制御を行います。データのリスクの可視化は Microsoft Purview、脅威の検出と保護は Microsoft Defender の役割です。",
+   "topic": "Microsoft Agent 365",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Agent 365 のライセンスの方式として、公式ページに記載されているものは、どれか。",
+   "choices": [
+    "ユーザー単位のライセンス",
+    "エージェント 1 台ごとの買い切りのライセンス",
+    "テナント全体で 1 つだけ必要な、共通のライセンス",
+    "ライセンスは不要で、すべての利用者が無料で使える"
+   ],
+   "answer": 0,
+   "explanation": "公式ページでは、Agent 365 はユーザー単位でライセンスされると記載されています。公式ページによると、Commercial では 2026 年 5 月 1 日に一般提供が開始されました。価格や提供プランは、製品ページで確認します。",
+   "topic": "Microsoft Agent 365",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "管理者が、エージェントを公開できるチャネルを制限する場所として、適切なものはどれか。",
+   "choices": [
+    "Dataverse のテーブルの、列のセキュリティ プロファイル",
+    "canvas app の、画面のプロパティ",
+    "Power Automate の、クラウド フローのトリガー設定",
+    "Power Platform 管理センターの Agent access channels"
+   ],
+   "answer": 3,
+   "explanation": "管理者は、Power Platform 管理センターの Agent access channels（プレビュー）で、利用できるチャネルを制限できます。データ ポリシーや認証の設定でも、チャネルがブロックされることがあります。",
+   "topic": "エージェントの管理",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "「Authenticate with Microsoft」の説明として、適切なものはどれか。",
+   "choices": [
+    "既定でオフになっていて、Teams では使えない",
+    "既定でオンで、Teams などで Microsoft Entra ID を自動で使う",
+    "すべてのチャネルで、手動の設定が必須になる",
+    "認証を省略して、誰でも利用できるようにする"
+   ],
+   "answer": 1,
+   "explanation": "「Authenticate with Microsoft」は既定でオンで、Teams、Power Apps、Microsoft Copilot で、手動の設定なしに Microsoft Entra ID を使います。ほかのチャネルで認証が必要な場合は、「Authenticate manually」を使います。",
+   "topic": "エージェントの管理",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "公開済みのエージェントを更新した後、Teams のような持続的なチャネルで、更新をすぐに読み込ませるために入力するものは、どれか。",
+   "choices": [
+    "reset all",
+    "sign out",
+    "start over",
+    "delete topic"
+   ],
+   "answer": 2,
+   "explanation": "Teams などの持続的なチャネルでは、更新がユーザーに届くまで最大 1 時間かかることがあります。現在のセッションで「start over」と入力すると、すぐに読み込まれます。",
+   "topic": "チャネルと公開",
+   "volatile": false,
+   "createdAt": "2026-11-09"
   }
  ]
 }
