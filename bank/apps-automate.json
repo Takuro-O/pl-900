@@ -1,0 +1,356 @@
+{
+ "field": "apps-automate",
+ "updatedAt": "2026-11-09",
+ "questions": [
+  {
+   "q": "ユーザー インターフェイスのレイアウトを自分で自由に設計し、SharePoint や Excel など、Dataverse 以外のデータ ソースにも接続したい。適したアプリの種類はどれか。",
+   "choices": [
+    "model-driven app",
+    "canvas app",
+    "Power Pages のサイト",
+    "デスクトップ フロー"
+   ],
+   "answer": 1,
+   "explanation": "canvas app は、空白のキャンバスにコンポーネントをドラッグ アンド ドロップして、レイアウトやコントロールを自由に設計でき、コネクタを通じて Dataverse 以外の多くのデータ ソースにも接続できます。model-driven app は、データ モデルをもとにコンポーネントを組み合わせて構成し、Power Pages は外部向け Web サイト、デスクトップ フローは画面操作の自動化に使います。",
+   "topic": "キャンバスアプリ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "canvas app が接続できるデータ ソースについて、適切なものはどれか。",
+   "choices": [
+    "Dataverse のテーブルだけに接続でき、ほかには接続できない",
+    "SharePoint のリストだけに接続でき、ほかのデータ ソースには接続できない",
+    "Excel ファイルだけに接続でき、ほかのデータ ソースには接続できない",
+    "Microsoft 365、Dataverse、SharePoint、SQL Server などに接続できる"
+   ],
+   "answer": 3,
+   "explanation": "canvas app は、Microsoft 365、Dataverse、SharePoint、Excel、SQL Server や Azure SQL、数百のコネクタなど、多くのデータ ソースに接続できます。特定の1種類のデータ ソースにしか接続できないという制限はありません。",
+   "topic": "キャンバスアプリ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "model-driven app を作成するために必要なものとして、適切なものはどれか。",
+   "choices": [
+    "Microsoft Dataverse に用意されたデータ モデル",
+    "Power Automate のクラウド フロー",
+    "Power Pages のサイト",
+    "Azure Logic Apps のワークフロー"
+   ],
+   "answer": 0,
+   "explanation": "model-driven app はデータ モデル主導のアプリで、Microsoft Dataverse に置かれたデータ モデルが必須です。データ モデルがなければ、model-driven app は作成できません。クラウド フロー、Power Pages のサイト、Logic Apps のワークフローは、アプリを作成するための前提ではありません。",
+   "topic": "モデル駆動型アプリ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "model-driven app を構成する要素として、適切なものはどれか。",
+   "choices": [
+    "画面ごとに自由に配置したコントロールと、各コントロールに設定した Power Fx の数式だけ",
+    "Power Automate のトリガーとアクションを並べた、処理の流れを表すフロー図だけ",
+    "テーブルに追加したフォーム、ビュー、グラフ、ダッシュボードなどのコンポーネント",
+    "AI Builder のモデルと、そのモデルを学習させるための学習用データだけ"
+   ],
+   "answer": 2,
+   "explanation": "model-driven app は、アプリ デザイナーを使って、テーブルにフォーム、ビュー、グラフ、ダッシュボードなどのコンポーネントを追加して構築します。少ないコードか、コードなしで作成でき、画面の多くはこれらのコンポーネントによって決まります。",
+   "topic": "モデル駆動型アプリ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "社内の担当者が、関連する顧客や案件の行をたどりながら進める、データ量の多い営業プロセスを管理するアプリを作りたい。特に適したアプリの種類はどれか。",
+   "choices": [
+    "canvas app",
+    "Power Pages のサイト",
+    "デスクトップ フロー",
+    "model-driven app"
+   ],
+   "answer": 3,
+   "explanation": "model-driven app は、データ量が多く、プロセス主導で、利用者が関連する行を行き来するアプリ（従業員の受け入れや営業プロセスなど）に特に適しています。リレーションシップに沿った移動や、アクセシビリティの機能も自動で提供されます。",
+   "topic": "アプリの種類の使い分け",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "model-driven app と比べた canvas app の特徴として、適切なものはどれか。",
+   "choices": [
+    "ナビゲーションなどの機能が自動で提供されるため、レイアウトを設計する必要がない",
+    "レイアウトを自由に設計でき、Power Fx の数式を使い、Dataverse 以外にも接続できる",
+    "Dataverse に用意されたデータ モデルがなければ、アプリを作成することはできない",
+    "画面の大部分が、追加したコンポーネントによって自動的に決まる仕組みである"
+   ],
+   "answer": 1,
+   "explanation": "canvas app は、メーカーがレイアウトを完全に制御でき、Power Fx の数式を使い、コネクタで多くのデータ ソースに接続できます。その分、ナビゲーションやアクセシビリティは設計に含める必要があります。データ モデルが必須で、UI がコンポーネントによって決まるのは model-driven app の特徴です。",
+   "topic": "アプリの種類の使い分け",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps の Plans（Plan designer）の説明として、適切なものはどれか。",
+   "choices": [
+    "ビジネス ユースケースの説明と画像から、包括的なソリューションを作成する、Copilot ファーストの開発ツール",
+    "既存の canvas app のコードを JavaScript に変換して、別の環境へ移すためのツール",
+    "Power Automate のフローの実行履歴を分析して、失敗の原因を特定するためのツール",
+    "Dataverse のテーブルの行データを、環境の間でバックアップするためのツール"
+   ],
+   "answer": 0,
+   "explanation": "Plans は、ビジネス ユースケースを自然言語で説明し、必要に応じてビジネス プロセス図や古いアプリのスクリーンショットなどの画像を添えて、包括的なビジネス ソリューションを素早く作成する、Copilot ファーストの開発ツールです。",
+   "topic": "Plan designer",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Plans（Plan designer）で作成できる成果物の組み合わせとして、適切なものはどれか。",
+   "choices": [
+    "Power Pages のサイトだけを作成でき、データやアプリは作成できない",
+    "Dataverse のテーブルだけを作成でき、アプリやフローは作成できない",
+    "Dataverse のテーブル、各種アプリ、サイト、フロー、エージェント",
+    "フローとエージェントだけを作成でき、アプリやテーブルは作成できない"
+   ],
+   "answer": 2,
+   "explanation": "Plans は、説明をもとに、Dataverse のテーブル、canvas app、model-driven app、Power Pages のサイト、Power Automate のフロー、Copilot Studio のエージェントを含むソリューションを作成します。環境には Dataverse データベースが必要です。",
+   "topic": "Plan designer",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps の code apps の説明として、適切なものはどれか。",
+   "choices": [
+    "ノーコードのデザイナーで画面を並べて作り、コードを書くことはできない仕組み",
+    "開発者が Visual Studio Code と React などで作る、Power Platform 上で動く Web アプリ",
+    "model-driven app のフォームにコードを追加して、ビューを拡張する仕組みである",
+    "Power Automate のデスクトップ フローを JavaScript で書くための仕組みである"
+   ],
+   "answer": 1,
+   "explanation": "code apps は、開発者が Visual Studio Code などのコード ファーストの IDE で、React や Vue などのフレームワークを使ってカスタム Web アプリを作り、管理されたプラットフォーム上で実行するものです。Microsoft Entra の認証や、コネクタ経由のデータ接続、ポリシーの適用などの Power Platform の機能も使えます。",
+   "topic": "code apps",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps で会話（自然言語での説明）によってアプリとテーブルを作成する機能を使うために必要なものとして、適切なものはどれか。",
+   "choices": [
+    "Azure Logic Apps のワークフローを、あらかじめ作成しておくこと",
+    "Power Pages のテンプレートを、あらかじめ選択しておくこと",
+    "デスクトップ フローの操作を、あらかじめ記録しておくこと",
+    "環境に Dataverse データベースがあり、AI Builder が有効になっていること"
+   ],
+   "answer": 3,
+   "explanation": "会話でアプリとテーブルを作成する機能の要件には、環境に Dataverse データベースがあることや、AI Builder が有効になっていること（プレビュー モデルの設定を含む）などがあります。Logic Apps、Power Pages のテンプレート、デスクトップ フローの記録は、この機能の前提ではありません。",
+   "topic": "AIによるアプリ作成",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "アプリの説明をもとに会話でアプリを作成する機能が、最初に提案する内容として、適切なものはどれか。",
+   "choices": [
+    "関連するテーブルと、推奨される列、サンプルの行データ、データ型",
+    "アプリの利用者ごとに作成した security role の一覧",
+    "アプリを配布するための、ストア向けパッケージ",
+    "アプリを運用した場合の、月額の利用料金の見積もり"
+   ],
+   "answer": 0,
+   "explanation": "この機能は、アプリの説明から、関連するデータ テーブルを提案し、列、サンプルの行データ、データ型を推奨します。内容はカスタマイズでき、サンプル データは架空で、例示のためのものです。生成された内容には誤りが含まれる可能性があるため、確認が必要です。",
+   "topic": "AIによるアプリ作成",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps の vibe experience の説明として、適切なものはどれか。",
+   "choices": [
+    "コードは生成せず、既存の canvas app のテンプレートを選ぶだけの機能",
+    "デスクトップ上の操作を記録して、デスクトップ フローを作る機能",
+    "アイデアを説明すると、AI がデータ モデルと UI を含むソリューションを生成する",
+    "Power Pages のサイトのアクセス状況を分析して、改善案を示す機能"
+   ],
+   "answer": 2,
+   "explanation": "vibe experience は、AI ネイティブなプラットフォームで、アイデアを自然言語で説明すると、AI がデータ モデル、ビジネス ロジック、ユーザー インターフェイスを含む完全なソリューションを生成します。公式ページでは、プレビューであり、本番での利用を想定していないと記載されています。",
+   "topic": "vibe experience",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "毎週月曜日の朝に、自動でレポートを送付するクラウド フローを作りたい。適切なクラウド フローの種類はどれか。",
+   "choices": [
+    "automated cloud flow",
+    "instant cloud flow",
+    "business process flow",
+    "scheduled cloud flow"
+   ],
+   "answer": 3,
+   "explanation": "scheduled cloud flow は、設定した日時や、毎日、毎週月曜日などの定期的なスケジュールで実行されます。automated cloud flow は新しいメールの受信などのイベント、instant cloud flow はボタンの選択などの手動の操作で開始します。business process flow は、クラウド フローとは別の仕組みです。",
+   "topic": "クラウドフローとトリガー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "モバイル アプリのボタンを押したときに開始するクラウド フローの種類はどれか。",
+   "choices": [
+    "scheduled cloud flow",
+    "instant cloud flow",
+    "automated cloud flow",
+    "desktop flow"
+   ],
+   "answer": 1,
+   "explanation": "instant（手動）cloud flow は、Power Automate やモバイル アプリのボタンを選択したときなど、利用者の操作で開始します。scheduled cloud flow は日時、automated cloud flow はイベントの発生が開始のきっかけで、desktop flow はクラウド フローとは別の種類です。",
+   "topic": "クラウドフローとトリガー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "ターミナル エミュレーターなどのレガシ アプリケーションの操作を含む、デスクトップ上の反復作業を自動化したい。適したフローの種類はどれか。",
+   "choices": [
+    "automated cloud flow",
+    "scheduled cloud flow",
+    "desktop flow",
+    "business rule"
+   ],
+   "answer": 2,
+   "explanation": "desktop flow は、Power Automate の RPA（ロボティック プロセス オートメーション）の機能を拡張するもので、デスクトップ上の反復作業を自動化します。レガシ アプリケーション（ターミナル エミュレーターなど）や、最新の Web・デスクトップ アプリ、Excel のファイルやフォルダーの操作を自動化できます。business rule は Dataverse のロジックです。",
+   "topic": "デスクトップフロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "desktop flow の作成方法として、適切なものはどれか。",
+   "choices": [
+    "デザイナーで用意されたアクションをドラッグ アンド ドロップするか、操作を記録して作成する",
+    "OpenAPI 定義を読み込んで、アクションを自動的に生成する",
+    "Dataverse のテーブルに列を追加して、画面操作の手順を定義する",
+    "Power Fx の数式だけで、デスクトップ操作の手順をすべて記述する"
+   ],
+   "answer": 0,
+   "explanation": "desktop flow は、Power Automate の desktop flow デザイナーで、あらかじめ用意されたアクションをドラッグ アンド ドロップするか、自分の操作を記録して、後で実行できます。アプリの UI 要素、画像、座標を使って操作できます。OpenAPI 定義は custom connector の作成に使います。",
+   "topic": "デスクトップフロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "請求書の承認を、クラウドで進めたうえで、承認後に請求書の情報を古い会計アプリへ入力する作業まで自動化したい。適切な構成はどれか。",
+   "choices": [
+    "承認の部分はデスクトップ フロー、会計アプリへの入力はクラウド フローで自動化する",
+    "承認の部分はクラウド フロー、会計アプリへの入力はデスクトップ フローで自動化する",
+    "承認も会計アプリへの入力も、Power Pages のサイトの機能だけで実現する",
+    "承認は security role で自動化し、入力は column security profile で行う"
+   ],
+   "answer": 1,
+   "explanation": "クラウド フローで承認の部分を自動化し、その中で desktop flow を使って、古いアプリへの請求書情報の入力を自動化する構成が適切です。承認からデスクトップ操作までを通した自動化の例として、Learn でも紹介されています。security role や column security profile は、アクセス権のための仕組みです。",
+   "topic": "クラウドとデスクトップの使い分け",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Automate の「Start and wait for an approval」アクションの動作として、適切なものはどれか。",
+   "choices": [
+    "承認依頼を送ったらすぐに、応答を待たずにフローの実行が完了する",
+    "承認者が拒否した場合にだけフローが一時停止し、承認の場合は止まらない",
+    "承認者が応答しなくても、一定時間後に必ず承認として扱われて進む",
+    "承認者が応答するまでフローが一時停止し、応答を受けてから実行が完了する"
+   ],
+   "answer": 3,
+   "explanation": "「Start and wait for an approval」は、承認を始める最も手軽な方法で、承認者が応答するまでフローが一時停止し、応答があってから実行が完了します。応答を待たずに完了する、拒否の場合だけ止まる、応答がなくても承認として扱われる、といった動作はしません。",
+   "topic": "承認フロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "承認の種類「Approve/Reject - First to respond」の動作として、適切なものはどれか。",
+   "choices": [
+    "すべての承認者が応答するまでは、承認依頼は完了しない",
+    "承認者が決められた順に、1 人ずつ応答する",
+    "承認者のうち 1 人が応答した時点で、承認依頼が完了する",
+    "承認者が定義した独自の選択肢で、全員の応答を待つ"
+   ],
+   "answer": 2,
+   "explanation": "「First to respond」は、承認者のうち誰か 1 人が承認または拒否を返した時点で、依頼が完了します。「Everyone must approve」は全員の応答、sequential approval は決められた順に 1 人ずつの応答、「Custom Responses - Wait for all responses」は独自の選択肢で全員の応答を待つ種類です。",
+   "topic": "承認フロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Automate で作成した承認依頼に、承認者が応答できる場所の組み合わせとして、適切なものはどれか。",
+   "choices": [
+    "Outlook のメール、Teams のアダプティブ カード、Power Automate のアクション センター",
+    "Outlook のメールのみで、Teams やアクション センターでは応答できない",
+    "Teams のアダプティブ カードのみで、メールやアクション センターでは応答できない",
+    "Power Automate のアクション センターのみで、メールや Teams では応答できない"
+   ],
+   "answer": 0,
+   "explanation": "承認者は、Outlook のメール、Microsoft Teams のアダプティブ カード、Power Automate のアクション センターのいずれからでも、承認依頼に応答できます。これらの場所で応答するには、Power Automate のライセンス、または Power Automate の機能が組み込まれた Office 365 や Dynamics 365 のライセンスが必要です。",
+   "topic": "TeamsとOutlookの自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "請求書の承認を自動化するフローで、Teams と Outlook をどのように使えるか。適切なものはどれか。",
+   "choices": [
+    "Teams と Outlook は、デスクトップ フローの中でしか利用できない",
+    "Teams と Outlook は、Dataverse のテーブルとして定義した場合にだけ利用できる",
+    "Teams と Outlook は承認の通知には使えず、承認は管理画面でのみ行える",
+    "Teams で承認を依頼し、Outlook のメールで承認や却下の通知を送ることができる"
+   ],
+   "answer": 3,
+   "explanation": "Power Automate では、Teams と Outlook を、クラウド フローやデスクトップ フローに組み込めます。Teams ベースの承認や、Outlook のメールによる承認・却下の通知を、既存のフローに追加できます。請求書の承認と、デスクトップ フローによる請求書情報の入力を組み合わせた、一貫した自動化も作れます。",
+   "topic": "TeamsとOutlookの自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Microsoft Forms で新しい回答が送信されたときに、自動でクラウド フローを開始したい。使用するものはどれか。",
+   "choices": [
+    "Microsoft Forms コネクタの「Get response details」アクション",
+    "Microsoft Forms コネクタの「When a new response is submitted」トリガー",
+    "SharePoint コネクタの「Create file」アクション",
+    "Office 365 Outlook コネクタの「Send an email」アクション"
+   ],
+   "answer": 1,
+   "explanation": "Microsoft Forms コネクタの「When a new response is submitted」は、新しい回答が送信されたときにフローを開始するトリガーです。「Get response details」は、回答の詳細を取得するアクションで、フローの開始のきっかけにはなりません。「Create file」や「Send an email」もアクションです。",
+   "topic": "SharePointとFormsの自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "クラウド フローのトリガーの説明として、適切なものはどれか。",
+   "choices": [
+    "トリガーの後に実行される、個々の処理のステップである",
+    "フローの実行結果を保存するための、Dataverse のテーブルである",
+    "フローを開始するきっかけとなるイベントで、デザイナーでは最初のステップとして追加する",
+    "フローを共有できるユーザーを制限するための、環境の設定である"
+   ],
+   "answer": 2,
+   "explanation": "トリガーは、クラウド フローを開始するイベントで、たとえば、メールを受信したときに Teams へ通知するフローを開始できます。デザイナーでは、フローを作成するとき、最初のステップとしてトリガーを追加します。トリガーの後に実行される個々の処理のステップは、アクションです。",
+   "topic": "コネクタのトリガーとアクション",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "SharePoint コネクタの「Create item」アクションの説明として、適切なものはどれか。",
+   "choices": [
+    "SharePoint のリストに、新しいアイテムを作成する",
+    "SharePoint のリストから、アイテムを取得する",
+    "SharePoint のサイトへ、ファイルをアップロードする",
+    "SharePoint のリストにアイテムが作成されたときに、フローを開始する"
+   ],
+   "answer": 0,
+   "explanation": "「Create item」は、SharePoint のリストに新しいアイテムを作成するアクションです。リストからアイテムを取得するのは「Get items」、ファイルをアップロードするのは「Create file」で、フローを開始するきっかけになるのはトリガーです。",
+   "topic": "コネクタのトリガーとアクション",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot in Power Automate でクラウド フローを作成する場合の説明として、適切なものはどれか。",
+   "choices": [
+    "説明を入力すると、接続やテストも自動で完了し、そのまま本番で実行される",
+    "自然言語の説明から、トリガーと 1 つ以上のアクションを含む構造が提案され、接続を確認して保存する",
+    "Copilot は新しいフローの作成だけに対応し、既存のフローの編集はできない",
+    "フローは Copilot がコードとして生成し、デザイナーでは確認できない"
+   ],
+   "answer": 1,
+   "explanation": "Copilot は、説明から、トリガーと 1 つ以上のアクションを含むフローの構造を提案します。接続が正しく設定されているかを確認し、デザイナーで保存して、テストすることが推奨されています。既存のフローも Copilot のペインを使って編集できます。",
+   "topic": "AIによるフロー作成",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  }
+ ]
+}
