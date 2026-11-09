@@ -351,6 +351,356 @@
    "topic": "AIによるフロー作成",
    "volatile": true,
    "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Document automation base kit が組み合わせている Power Platform の要素として、適切なものはどれか。",
+   "choices": [
+    "Power Automate、Power Pages、Copilot Studio、Azure Synapse",
+    "Power Apps、Power Pages、Copilot Studio、Excel",
+    "Power Automate、AI Builder、Power Apps、Dataverse",
+    "AI Builder、Dataverse、Power Pages、Azure Synapse"
+   ],
+   "answer": 2,
+   "explanation": "Document automation base kit は、環境にインストールする参照用のソリューションで、Power Automate、AI Builder、Power Apps、Dataverse を組み合わせています。受信したドキュメントからデータを抽出し、会計、HR、CRM などの対象システムへ渡す流れを実現します。",
+   "topic": "ドキュメント自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Document Automation Email Importer フローが開始されるタイミングとして、適切なものはどれか。",
+   "choices": [
+    "特定の Outlook メール アドレスに、添付ファイル付きのメールが届いたときに開始する",
+    "Dataverse のテーブルに、新しい列が追加されたときに、自動で開始する",
+    "毎週月曜日の朝に、スケジュールで定期的に実行されるときに開始する",
+    "Teams のチャネルに、新しいメッセージが投稿されたときに開始する"
+   ],
+   "answer": 0,
+   "explanation": "Email Importer フローは、特定の Outlook メール アドレスに添付ファイル付きのメールが届いたときに開始します。取り込み元は、カスタマイズして SharePoint やクラウド ストレージにも変更できます。",
+   "topic": "ドキュメント自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Document Processor フローが行う処理として、適切なものはどれか。",
+   "choices": [
+    "承認者に Teams で承認を依頼して、応答があるまでフローを一時停止して待つ",
+    "デスクトップ上の操作を記録して、レガシ アプリケーションの画面へデータを入力する",
+    "Copilot Studio のエージェントを公開して、利用するチャネルに配置する",
+    "AI Builder の document processing model を実行して必要なデータを取得し、結果を Dataverse に保存する"
+   ],
+   "answer": 3,
+   "explanation": "Document Processor フローは、ドキュメントに対して AI Builder の document processing model を実行して、必要なデータを取り出し、結果を Dataverse に保存します。承認の依頼、デスクトップ操作、エージェントの公開は、このフローの役割ではありません。",
+   "topic": "ドキュメント自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "ドキュメント自動化の処理に、人が結果を確認する手動レビューの手順（human in the loop）を含める理由として、適切なものはどれか。",
+   "choices": [
+    "AI Builder のモデルは、データを抽出する機能を持たないため",
+    "コンプライアンスに関する規則や、AI の精度を評価する必要があるため",
+    "Power Apps のライセンスを使い切らないと、フローを実行できないため",
+    "Dataverse には、自動で保存したデータを読み取る機能がないため"
+   ],
+   "answer": 1,
+   "explanation": "コンプライアンスに関する規則や、AI の精度を評価する必要があるため、処理には手動レビューが含まれます。AI Builder のモデルはドキュメントからデータを抽出できます。Power Apps のアプリで、レビュー担当者が抽出したデータをドキュメントと照らして確認し、承認します。",
+   "topic": "ドキュメント自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Document Automation Validator フローの既定の動作として、適切なものはどれか。",
+   "choices": [
+    "金額に応じたルールが設定済みで、少額のドキュメントは自動で承認される",
+    "すべてのドキュメントが自動で承認され、手動レビューには送られない",
+    "ルールは設定されておらず、すべてのドキュメントが手動レビューに送られる",
+    "メールの件名に応じて、ドキュメントの送信先が自動で振り分けられる"
+   ],
+   "answer": 2,
+   "explanation": "Validator フローは、ビジネス ロジックを追加するための場所で、既定ではルールが設定されておらず、すべてのドキュメントを手動レビューに送ります。必要に応じて、利用者が自分でルールを追加します。",
+   "topic": "ドキュメント自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Document automation base kit で、PDF、PNG、JPEG 以外のファイルが送られた場合の扱いとして、適切なものはどれか。",
+   "choices": [
+    "Invalid document の状態に設定される",
+    "Validated の状態に設定され、そのまま外部システムへ書き出される",
+    "自動で PDF に変換されて、通常どおり処理される",
+    "Document Processor フローが失敗し、環境が停止する"
+   ],
+   "answer": 0,
+   "explanation": "対応するファイルの種類は PDF、PNG、JPEG で、それ以外のドキュメントは Invalid document の状態になります。Validated の状態は、レビューを終えて外部システムへ書き出せるドキュメントを指します。",
+   "topic": "ドキュメント自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Document automation base kit で、手動レビューを担当する各ユーザーに必要なライセンスとして、適切なものはどれか。",
+   "choices": [
+    "Copilot Studio のライセンス",
+    "Power Pages のライセンス",
+    "Dynamics 365 Sales のライセンス",
+    "Power Apps のライセンス"
+   ],
+   "answer": 3,
+   "explanation": "レビューを担当するユーザーは、Power Apps のアプリでドキュメントを確認するため、ユーザーごとに Power Apps のライセンスが必要です。フローを実行するための Power Automate のライセンスと、プロセスの所有者の Power Apps のライセンスも必要です。",
+   "topic": "ドキュメント自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "SharePoint のドキュメント ライブラリのフォルダーにファイルがアップロードされたときに、フローを開始したい。使うトリガーはどれか。",
+   "choices": [
+    "When an item is deleted",
+    "When a file is created in a folder",
+    "When a file is deleted",
+    "When an item is created"
+   ],
+   "answer": 1,
+   "explanation": "「When a file is created in a folder」は、選択したドキュメント ライブラリのフォルダーにファイルがアップロードされたときに開始します。「When an item is created」はリストのアイテム、「When a file is deleted」と「When an item is deleted」は削除が開始のきっかけです。",
+   "topic": "SharePointとFormsの自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "SharePoint のリストのアイテムが追加または変更されたときに、フローを開始したい。使うものはどれか。",
+   "choices": [
+    "Get items",
+    "Update item",
+    "When an item is created or modified",
+    "Create item"
+   ],
+   "answer": 2,
+   "explanation": "「When an item is created or modified」は、リストのアイテムが追加または変更されたときにフローを開始するトリガーです。「Get items」「Update item」「Create item」は、トリガーの後で実行するアクションで、フローを開始するものではありません。",
+   "topic": "SharePointとFormsの自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "SharePoint のドキュメント ライブラリにあるファイルの、バイナリ コンテンツを取得したい。使うアクションはどれか。",
+   "choices": [
+    "Get file content",
+    "Get items",
+    "Update item",
+    "Delete item"
+   ],
+   "answer": 0,
+   "explanation": "「Get file content」は、ドキュメント ライブラリのファイルのバイナリ コンテンツを取得します。「Get items」は条件に合うリストのアイテムの取得、「Update item」は既存のアイテムの変更、「Delete item」はアイテムの削除です。",
+   "topic": "コネクタのトリガーとアクション",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "組み込みのアクションでは実行できない、REST API の呼び出しのような SharePoint の高度な操作を行いたい。使うアクションはどれか。",
+   "choices": [
+    "Create item",
+    "Get items",
+    "Update item",
+    "Send an HTTP request to SharePoint"
+   ],
+   "answer": 3,
+   "explanation": "「Send an HTTP request to SharePoint」は、REST API の呼び出しなど、組み込みのアクションではサポートされていない高度な操作を実行します。「Create item」「Get items」「Update item」は、リストのアイテムを扱う、よく使うアクションです。",
+   "topic": "コネクタのトリガーとアクション",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "SharePoint のリストにある既存のアイテムの内容を変更したい。使うアクションはどれか。",
+   "choices": [
+    "Create item",
+    "Update item",
+    "Get items",
+    "Delete item"
+   ],
+   "answer": 1,
+   "explanation": "「Update item」は、既存のリストのアイテムを変更します。「Create item」は新しいアイテムの作成、「Get items」は条件に合うアイテムの取得、「Delete item」はアイテムの削除です。",
+   "topic": "コネクタのトリガーとアクション",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Microsoft Forms コネクタで、送信された回答の詳細を取得するアクションはどれか。",
+   "choices": [
+    "When a new response is submitted",
+    "Get form details",
+    "Get response details",
+    "Create item"
+   ],
+   "answer": 2,
+   "explanation": "「Get response details」は、回答の詳細を取得するアクションです。「When a new response is submitted」はフローを開始するトリガーです。「Create item」は SharePoint コネクタのアクションで、Forms の回答を取得するものではありません。",
+   "topic": "SharePointとFormsの自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Plans（Plan designer）でソリューションを作成するために、環境に必要なものとして、適切なものはどれか。",
+   "choices": [
+    "Dataverse データベース",
+    "Power Pages のサイト",
+    "デスクトップ フローの実行環境",
+    "Azure Logic Apps のワークフロー"
+   ],
+   "answer": 0,
+   "explanation": "Plans を使うには、環境に Dataverse データベースが必要です。Power Pages のサイト、デスクトップ フローの実行環境、Logic Apps のワークフローは、あらかじめ必要なものではありません。",
+   "topic": "Plan designer",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Plans（Plan designer）に、ユースケースの説明とあわせて添えられるものとして、適切なものはどれか。",
+   "choices": [
+    "Dataverse のテーブルから書き出した、すべての行データ",
+    "Power Automate の、過去 1 年分のフローの実行履歴",
+    "環境に割り当てた、すべての security role の一覧",
+    "ビジネス プロセス図や古いアプリのスクリーンショットなどの画像"
+   ],
+   "answer": 3,
+   "explanation": "Plans では、ユースケースを自然言語で説明し、必要に応じてビジネス プロセス図や古いアプリのスクリーンショットなどの画像を添えて、ソリューションを作成できます。",
+   "topic": "Plan designer",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps の code apps で利用できる Power Platform の機能として、適切なものはどれか。",
+   "choices": [
+    "デザイナーにドラッグ アンド ドロップで配置するだけの、ノーコード開発",
+    "Microsoft Entra の認証、コネクタ経由のデータ接続、ポリシーの適用",
+    "Dataverse を使わずに、すべての管理機能を回避できる仕組み",
+    "Power Pages のサイトに、アプリを自動で組み込む機能"
+   ],
+   "answer": 1,
+   "explanation": "code apps は、開発者がコードで作る Web アプリですが、Microsoft Entra の認証、コネクタ経由のデータ接続、ポリシーの適用などの Power Platform の機能を使えます。管理されたプラットフォーム上で実行されます。",
+   "topic": "code apps",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps の vibe experience について、公式ページに記載されている状態として、適切なものはどれか。",
+   "choices": [
+    "一般提供されており、本番での利用が推奨されている",
+    "非推奨となり、すでに廃止されている",
+    "プレビューであり、本番での利用を想定していない",
+    "Power Pages のサイト専用の機能として提供されている"
+   ],
+   "answer": 2,
+   "explanation": "公式ページでは、vibe experience はプレビューであり、本番での利用を想定していないと記載されています。新しい機能の状態は変わりやすいため、利用前に Microsoft Learn で最新の情報を確認してください。",
+   "topic": "vibe experience",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps で、アプリの説明から会話でテーブルを提案させる機能の、サンプル データについて適切なものはどれか。",
+   "choices": [
+    "架空の例示用データで、誤りが含まれる可能性があるため確認が必要",
+    "実在の顧客データが自動で取り込まれ、確認は不要",
+    "Dataverse から取得した、本番データの完全なコピー",
+    "Microsoft が検証済みで、誤りが含まれることはない"
+   ],
+   "answer": 0,
+   "explanation": "この機能が提案するサンプルの行データは、例示のための架空のデータです。生成された内容には誤りが含まれる可能性があるため、内容を確認して、必要に応じてカスタマイズします。",
+   "topic": "AIによるアプリ作成",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot in Power Automate が提案したフローを使う前に推奨されることとして、適切なものはどれか。",
+   "choices": [
+    "接続やテストは省略して、そのまま本番で実行する",
+    "フローを削除して、最初から手作業で作り直す",
+    "承認者全員に、事前に Power Apps のライセンスを割り当てる",
+    "接続が正しく設定されているかを確認し、フローを保存して、テストする"
+   ],
+   "answer": 3,
+   "explanation": "Copilot が提案したフローは、接続が正しく設定されているかを確認し、デザイナーで保存して、テストすることが推奨されます。提案をそのまま本番で実行するのは避けます。",
+   "topic": "AIによるフロー作成",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Copilot in Power Automate の対象として、適切なものはどれか。",
+   "choices": [
+    "新しいフローの作成のみで、既存のフローは編集できない",
+    "新しいフローの作成と、Copilot のペインによる既存フローの編集",
+    "既存のフローの編集のみで、新しいフローは作成できない",
+    "デスクトップ フローの実行だけで、クラウド フローは対象外"
+   ],
+   "answer": 1,
+   "explanation": "Copilot は、説明から新しいフローを作成できるだけでなく、既存のフローも Copilot のペインを使って編集できます。",
+   "topic": "AIによるフロー作成",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "desktop flow がアプリを操作するときに使える手がかりとして、適切なものはどれか。",
+   "choices": [
+    "Dataverse の security role と column security profile",
+    "Copilot Studio のトピックとナレッジ ソース",
+    "アプリの UI 要素、画像、座標",
+    "Power Pages の Web ロールとテーブルのアクセス許可"
+   ],
+   "answer": 2,
+   "explanation": "desktop flow は、アプリの UI 要素、画像、座標を使って操作できます。security role、トピック、Web ロールは、それぞれ別の機能のための仕組みです。",
+   "topic": "デスクトップフロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "desktop flow が拡張する、Power Automate の機能として適切なものはどれか。",
+   "choices": [
+    "RPA（ロボティック プロセス オートメーション）",
+    "ALM（アプリケーション ライフサイクル管理）",
+    "DLP（データ損失防止）ポリシー",
+    "ETL（データの抽出・変換・読み込み）"
+   ],
+   "answer": 0,
+   "explanation": "desktop flow は、Power Automate の RPA（ロボティック プロセス オートメーション）の機能を拡張するものです。ALM、DLP、ETL は、desktop flow が拡張する機能ではありません。",
+   "topic": "デスクトップフロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "承認者が決められた順に 1 人ずつ応答する承認の方式は、どれか。",
+   "choices": [
+    "Approve/Reject - First to respond",
+    "sequential approval",
+    "Approve/Reject - Everyone must approve",
+    "Custom Responses - Wait for all responses"
+   ],
+   "answer": 1,
+   "explanation": "sequential approval は、決められた順に 1 人ずつ応答する方式です。「First to respond」は誰か 1 人の応答で完了し、「Everyone must approve」と「Custom Responses - Wait for all responses」は全員の応答を待ちます。",
+   "topic": "承認フロー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Teams のアダプティブ カードや Outlook のメールから、Power Automate の承認依頼に応答するために必要なものとして、適切なものはどれか。",
+   "choices": [
+    "Copilot Studio のライセンスを、承認者ごとにあらかじめ割り当てておく",
+    "Power Pages のサイトを、承認者ごとにあらかじめ作成しておく",
+    "承認者のデスクトップに、desktop flow をあらかじめインストールしておく",
+    "Power Automate のライセンス、または機能が組み込まれた Office 365 か Dynamics 365 のライセンス"
+   ],
+   "answer": 3,
+   "explanation": "承認者が Outlook、Teams、アクション センターから応答するには、Power Automate のライセンス、または Power Automate の機能が組み込まれた Office 365 や Dynamics 365 のライセンスが必要です。",
+   "topic": "TeamsとOutlookの自動化",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "model-driven app を構築するために使うツールとして、適切なものはどれか。",
+   "choices": [
+    "desktop flow デザイナー",
+    "Copilot Studio のトピック エディター",
+    "アプリ デザイナー",
+    "Power Pages のデザイン スタジオ"
+   ],
+   "answer": 2,
+   "explanation": "model-driven app は、アプリ デザイナーを使って、テーブルにフォーム、ビュー、グラフ、ダッシュボードなどのコンポーネントを追加して構築します。desktop flow デザイナーは desktop flow、トピック エディターはエージェント、デザイン スタジオはサイトのためのツールです。",
+   "topic": "モデル駆動型アプリ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
   }
  ]
 }
