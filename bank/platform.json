@@ -1,0 +1,356 @@
+{
+ "field": "platform",
+ "updatedAt": "2026-11-09",
+ "questions": [
+  {
+   "q": "経費の申請が提出されたら、上長へ承認依頼を送り、結果を申請者へ通知するといった、複数のサービスをまたぐ反復作業を自動化したい。最も適したサービスはどれか。",
+   "choices": [
+    "Power Apps",
+    "Power Pages",
+    "Power Automate",
+    "Copilot Studio"
+   ],
+   "answer": 2,
+   "explanation": "Power Automate は、アプリやサービスの間のワークフローを作成し、承認やデータ収集などの反復作業を自動化するサービスです。Power Apps はアプリの作成、Power Pages は外部向け Web サイトの作成、Copilot Studio は会話型エージェントの構築に使うため、この要件の中心にはなりません。",
+   "topic": "Power Platformのサービスと使い分け",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Platform の複数のコンポーネント（アプリ、フロー、エージェントなど）が、共通のデータを使って連携するための基盤となるデータサービスはどれか。",
+   "choices": [
+    "Microsoft Dataverse",
+    "Power Fx",
+    "AI Builder",
+    "Power Pages"
+   ],
+   "answer": 0,
+   "explanation": "Microsoft Dataverse は、データを安全に保存・管理するデータサービスで、Power Platform の各コンポーネントが連携するための基盤になります。Power Fx は数式を書くためのローコード言語、AI Builder はアプリやフローに AI 機能を加えるサービス、Power Pages は外部向け Web サイトを作成するサービスです。",
+   "topic": "Power Platformのサービスと使い分け",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Automate のフローから、Office 365 や Salesforce などの外部サービスのデータや機能を使いたい。あらかじめ用意されたアクションやトリガーを使って接続するために利用するものはどれか。",
+   "choices": [
+    "business rule",
+    "view",
+    "security role",
+    "コネクタ"
+   ],
+   "answer": 3,
+   "explanation": "コネクタは、アカウントを接続し、あらかじめ用意されたアクションとトリガーを使って、アプリやフローから外部サービスを利用するためのものです。business rule は Dataverse のデータ検証ロジック、view は行の一覧表示の定義、security role はテーブルへの権限のまとまりで、外部サービスへの接続には使いません。",
+   "topic": "コネクタ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "社内で開発した REST API の OpenAPI 定義がある。既製のコネクタが用意されていない場合に、この API を Power Apps やフローから利用できるようにする方法として適切なものはどれか。",
+   "choices": [
+    "API の応答を手入力した Dataverse テーブルを作成する",
+    "OpenAPI 定義から custom connector を作成する",
+    "Power Pages のサイトに API の URL を埋め込んでおく",
+    "security role に API の呼び出し権限を追加しておく"
+   ],
+   "answer": 1,
+   "explanation": "custom connector は OpenAPI 定義などから作成でき、作成したコネクタは Power Apps やフロー、Copilot Studio から利用できます。テーブルへの手入力や URL の埋め込み、security role への権限追加では、アプリやフローから API を呼び出す接続は実現できません。",
+   "topic": "コネクタ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Dataverse のデータ ワークスペースでスプレッドシートなどの外部データをインポートするとき、Copilot が提供する支援として適切なものはどれか。",
+   "choices": [
+    "インポート先のテーブルを、別の環境へ自動でコピーして展開する",
+    "取り込むデータの列を、既存の Dataverse の列に対応付ける候補を提案する",
+    "インポート後に重複した行を、確認なしで自動的にすべて削除する",
+    "取り込んだデータを、Power Pages のサイトへ自動的に公開する"
+   ],
+   "answer": 1,
+   "explanation": "Copilot は取り込むデータを分析し、既存の Dataverse の列へのマッピングを提案します。これにより、手作業の負担とマッピングの誤りを減らせます。環境間のコピー、確認なしの重複削除、サイトへの自動公開は、この機能として説明されている支援ではありません。",
+   "topic": "生成AI機能とCopilot",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Dataverse の特徴として適切なものはどれか。",
+   "choices": [
+    "データの保護はアプリごとの設定に任されており、ロールベースのセキュリティは利用できない",
+    "Power Apps からのみ利用でき、Power Automate や Dynamics 365 のアプリからは参照できない",
+    "標準テーブルだけを使う仕組みで、組織独自のカスタム テーブルは作成できない",
+    "標準テーブルが用意され、ロールベースのセキュリティやビジネス ルールなど、ビジネス アプリ向けの機能を備えている"
+   ],
+   "answer": 3,
+   "explanation": "Dataverse は、一般的なシナリオ向けの標準テーブルを備え、組織独自のカスタム テーブルも作成できます。アクセスはロールベースのセキュリティで制御され、ビジネス ルールなどでデータを検証できます。Power Apps だけでなく、Power Automate や Dynamics 365 のアプリでも利用されます。",
+   "topic": "Dataverseと従来のデータベース",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Dataverse の説明として不適切なものはどれか。",
+   "choices": [
+    "メタデータとデータは、利用者の端末にのみ保存され、クラウドには保存されない",
+    "データはテーブルに格納され、テーブルは行と列で構成される",
+    "標準テーブルを拡張するための、組織独自のカスタム テーブルを作成できる",
+    "Power Apps や Power Automate、Power Pages のデータとして利用できる"
+   ],
+   "answer": 0,
+   "explanation": "Dataverse では、メタデータとデータの両方がクラウドに保存されます。したがって「端末にのみ保存される」という説明が不適切です。データはテーブル（行と列）に格納され、標準テーブルを拡張するカスタム テーブルを作成でき、Power Apps、Power Automate、Power Pages などから利用できます。",
+   "topic": "Dataverseと従来のデータベース",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "顧客テーブルと注文テーブルがあり、1人の顧客に複数の注文が対応する。注文テーブルに顧客を参照する lookup 列を追加したとき、作成される関係はどれか。",
+   "choices": [
+    "顧客と注文の many-to-many（N:N）リレーションシップ",
+    "顧客と注文の one-to-one リレーションシップ",
+    "顧客から注文への one-to-many（1:N）リレーションシップ",
+    "リレーションシップは作られず、列だけが追加される"
+   ],
+   "answer": 2,
+   "explanation": "lookup 列を追加すると、2つのテーブルの間に新しい 1:N リレーションシップが作られます。lookup 列は関連（子）テーブルに置かれ、親テーブルの行への参照を保持します。Dataverse のテーブル間の関係は 1:N と N:N の2種類で、N:N は中間テーブルを使う別の種類です。",
+   "topic": "テーブル・列・リレーションシップ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "学生と講座のように、双方のテーブルの複数の行が互いに関連付く場合に使うリレーションシップと、その実現に使われる仕組みの組み合わせはどれか。",
+   "choices": [
+    "one-to-many（1:N）。親テーブルに lookup 列を追加する",
+    "one-to-many（1:N）。子テーブルに lookup 列を追加する",
+    "many-to-one（N:1）。子テーブルの行を親テーブルへ複製する",
+    "many-to-many（N:N）。中間（intersect）テーブルを使う"
+   ],
+   "answer": 3,
+   "explanation": "N:N では、一方のテーブルの複数の行が他方のテーブルの複数の行と関連付き、行同士は対等の関係になります。この関係は中間（intersect）テーブルに依存します。1:N は子（関連）テーブルの lookup 列で親の行を参照する関係で、N:1 は 1:N を子の側から見たものです。",
+   "topic": "テーブル・列・リレーションシップ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "テーブルの行を一覧表示するとき、表示する列、並び順、フィルター条件を保存しておくための定義はどれか。",
+   "choices": [
+    "ビュー（view）",
+    "フォーム（form）",
+    "business rule",
+    "lookup 列"
+   ],
+   "answer": 0,
+   "explanation": "ビューは、どの行をどの順序で一覧に表示するかを決める保存済みのクエリで、表示する列、並び順、フィルター条件を制御します。フォームは1つの行の詳細を表示・編集するレイアウト、business rule は入力データの検証などのロジック、lookup 列は他のテーブルの行を参照するための列です。",
+   "topic": "フォームとビュー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "ある行を表示するメインフォームの中に、関連する別のテーブルの行の概要を、読み取り専用で表示したい。使用するフォームの種類はどれか。",
+   "choices": [
+    "quick create form",
+    "card form",
+    "quick view form",
+    "main form"
+   ],
+   "answer": 2,
+   "explanation": "quick view form は、関連する行の概要を、別の行のメインフォームの中に読み取り専用で表示します。quick create form は現在の画面を離れずに行を作成する簡易フォーム、card form はビューやダッシュボードで主要な列の値を簡潔に示すコンパクトなフォーム、main form は行全体を表示・編集する主要なフォームです。",
+   "topic": "フォームとビュー",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "複数の列にまたがる入力チェックを、どのアプリで作成・更新されたデータにも適用し、条件を満たさない場合はエラー メッセージを表示したい。コードを書かずに実現する方法として適切なものはどれか。",
+   "choices": [
+    "canvas app のボタンに数式を設定して入力を確認する",
+    "Dataverse のテーブルに business rule を設定する",
+    "model-driven app のフォームのレイアウトを変更する",
+    "Power Automate のスケジュール済みクラウド フローを作成する"
+   ],
+   "answer": 1,
+   "explanation": "business rule は、ビジュアル デザイナーでコードを書かずに作成でき、複数の列にまたがるデータの検証や、警告・エラー メッセージの表示を、データを作成したアプリに関係なく行えます。アプリ内の数式は、そのアプリでの入力にしか効かず、フォームのレイアウト変更は検証を行いません。スケジュール済みのフローは、入力時のチェックには向きません。",
+   "topic": "ビジネスロジックとPower Fx",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "同じ行の列の値を使った計算結果を保持する列を、Power Fx の数式で定義したい。使用する列の種類はどれか。",
+   "choices": [
+    "formula column",
+    "rollup column",
+    "lookup column",
+    "choice column"
+   ],
+   "answer": 0,
+   "explanation": "formula column は、同じ行や関連する行の列を参照する Power Fx の数式から値を計算する列で、行を読み取るときにサーバーで計算されます。rollup column は関連する行のデータを集計し、スケジュールに基づいて再計算されます。lookup column は他のテーブルの行を参照し、choice column は定義済みの選択肢から値を選ぶ列です。",
+   "topic": "ビジネスロジックとPower Fx",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps で Copilot を使い、自然言語でテーブルを作成する場合の説明として適切なものはどれか。",
+   "choices": [
+    "説明を入力すると、確認の手順なしでテーブルが自動で保存され、以後は変更できない",
+    "Copilot は列の追加にのみ対応し、他のテーブルとのリレーションシップは提案できない",
+    "説明をもとに列名、データ型、サンプル データを含む草案が作られ、追加の指示で調整してから保存する",
+    "作られた草案は完成版であり、内容の確認や調整は想定されていない"
+   ],
+   "answer": 2,
+   "explanation": "Copilot は説明から、列名、データ型、サンプル データを含むテーブルの草案を作ります。草案は出発点で、追加のプロンプトで列の追加や型の変更、リレーションシップの作成などを行い、満足した段階で保存します。リレーションシップも、種類と構成を提案できます。",
+   "topic": "AIによるテーブル作成",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Dataverse のデータの保護について、Microsoft の説明として適切なものはどれか。",
+   "choices": [
+    "暗号化キーは常に利用者だけが管理し、Microsoft がキーを管理する構成はない",
+    "Dataverse 環境のデータベースは保存時に暗号化され、通信も暗号化される",
+    "ユーザーのデバイスと Microsoft のデータセンターの間の通信は、暗号化されない",
+    "データはテナントの設定に関係なく、世界中のすべての地域に常に複製される"
+   ],
+   "answer": 1,
+   "explanation": "Dataverse 環境のデータベースは保存時に暗号化され、デバイスとデータセンターの間の通信も暗号化されます。暗号化キーは既定で Microsoft が管理します。データはテナントの既定の地域（geo）に置かれ、復元性のための複製も同じ geo の範囲内で行われます。",
+   "topic": "データプライバシーとアクセシビリティ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Apps のキャンバス アプリで、アクセシビリティ上の問題の可能性を確認するために使う機能はどれか。",
+   "choices": [
+    "データポリシー（data policy）",
+    "Power Platform admin center の Monitor",
+    "Dataverse の business rule",
+    "Accessibility Checker"
+   ],
+   "answer": 3,
+   "explanation": "Accessibility Checker は、アプリのアクセシビリティ上の問題の可能性を確認するための機能です。データポリシーはコネクタへのアクセスを管理者が制御するもの、Monitor は運用上の健全性の指標を確認するもの、business rule は Dataverse のデータ検証ロジックであり、アクセシビリティの確認には使いません。",
+   "topic": "データプライバシーとアクセシビリティ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Platform の環境（environment）の説明として適切なものはどれか。",
+   "choices": [
+    "利用者のデバイスの種類ごとに、アプリの画面レイアウトを自動で切り替えるための設定の集まり",
+    "Power Fx の数式を実行するために、テナント内に1つだけ用意される共通の実行基盤",
+    "アプリやフロー、データを保管・管理・共有する場所で、用途や対象者の異なるアプリを分離できる",
+    "アプリの利用者ごとに自動で作成され、その人だけが閲覧できる個人専用のデータ保存領域"
+   ],
+   "answer": 2,
+   "explanation": "環境は、組織のビジネス データ、アプリ、チャットボット、フローを保管・管理・共有する場所です。役割、セキュリティ要件、対象者が異なるアプリを分けて管理するためにも使います。画面レイアウトの切り替え、数式の実行基盤、個人専用のデータ保存領域といった説明は、環境の役割ではありません。",
+   "topic": "環境",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "テナントごとに自動で1つ作成され、すべてのユーザーで共有される環境で、実験や簡単な試用開発向きであり、本番運用には使うべきではないものはどれか。",
+   "choices": [
+    "default environment",
+    "production environment",
+    "sandbox environment",
+    "trial environment"
+   ],
+   "answer": 0,
+   "explanation": "default environment は、テナントごとに自動で1つ作成され、すべてのユーザーが共有します。実験や簡単な試用開発向きで、バックアップの保証がなく、本番運用には使うべきではありません。production は継続的な組織の業務用、sandbox は本番とは別の開発・テスト用、trial は短期間のテスト用の環境です。",
+   "topic": "環境",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Dataverse で、テーブルの行に対する Create や Read、Write などの権限をまとめ、ユーザーまたはチームに割り当てるものはどれか。",
+   "choices": [
+    "column security profile",
+    "security role",
+    "business unit",
+    "business rule"
+   ],
+   "answer": 1,
+   "explanation": "security role は権限（privilege）をまとめたもので、ユーザーや Dataverse のチームに直接割り当てられます。column security profile は保護された列へのアクセスを付与するもの、business unit はユーザーとデータを分ける セキュリティ上の境界、business rule はデータ検証のロジックです。",
+   "topic": "セキュリティモデル",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "ある列の値だけを、特定のユーザーやチームにのみ表示・編集させたい。Dataverse での適切な設定はどれか。",
+   "choices": [
+    "その列をフォームの別のタブへ移動し、そのタブを折りたたんで初期状態では目立たなくする",
+    "その列を含むビューにフィルター条件を設定して、一覧に表示される行を一部のものに絞り込む",
+    "その列の種類を lookup 列に変更したうえで、参照先の行に対する権限をすべて取り外しておく",
+    "その列の列レベル セキュリティを有効にし、column security profile を割り当てる"
+   ],
+   "answer": 3,
+   "explanation": "列レベル セキュリティは列ごとに有効にでき、管理者が column security profile で Create、Update、Read のアクセスを付与し、ユーザーやチームに割り当てます。なお、このプロファイルは行へのアクセスを付与しないため、ユーザーは事前にその行にアクセスできる必要があります。フォームやビューの変更は、表示の見せ方を変えるだけで、データへのアクセスを制御しません。",
+   "topic": "セキュリティモデル",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Platform admin center の Monitor に関する説明として適切なものはどれか。",
+   "choices": [
+    "アプリ、フロー、エージェントなどの運用上の健全性の指標を、実行時のイベント ログの日次集計から算出する",
+    "指標はリアルタイムで更新され、イベント ログの集計を待たずに常に最新の状態を表示する",
+    "利用するには、Application Insights を含む Azure サブスクリプションの契約が必須である",
+    "各行に保存された顧客データの内容を検索し、個人情報を自動的に削除するための機能である"
+   ],
+   "answer": 0,
+   "explanation": "Monitor は、アプリ、フロー、エージェントなどの運用上の健全性の指標を測定し、改善に役立てるための機能です。指標は実行時のイベント ログを日次で集計したもので、リアルタイムではありません。Monitor の利用に Azure サブスクリプションは不要で、Application Insights は、より詳細なログを扱いたい場合の別の選択肢です。",
+   "topic": "監視と分析",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "Power Platform の pipelines の目的として適切なものはどれか。",
+   "choices": [
+    "Dataverse のテーブルに保存された行データを、環境の間で定期的にコピーして同期する",
+    "ソリューションを、接続や環境変数などの構成も含めて、開発環境から対象環境へ自動でデプロイする",
+    "アプリを利用しているユーザーの人数を集計し、ライセンスを自動で割り当てる",
+    "フローの実行履歴を取得して、失敗した実行の原因を自動的に修正する"
+   ],
+   "answer": 1,
+   "explanation": "pipelines は、Power Platform に ALM の自動化と CI/CD の機能を持ち込み、ソリューションを接続や環境変数などの対象環境の構成とともにデプロイします。pipelines とソリューションには、Dataverse のテーブルに保存された行データは含まれません。ライセンスの割り当てや、フローの失敗原因の自動修正も、pipelines の目的ではありません。",
+   "topic": "ALMとパイプライン",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "pipelines で、開発環境以外の環境へデプロイするソリューションとして適切なものはどれか。",
+   "choices": [
+    "unmanaged solution",
+    "Dataverse の行データを含むエクスポート ファイル",
+    "managed solution",
+    "Power Fx の数式だけを書き出したファイル"
+   ],
+   "answer": 2,
+   "explanation": "pipelines では、開発環境以外の環境へ managed solution をデプロイすることが推奨され、unmanaged solution はデプロイできません。pipelines とソリューションには Dataverse のテーブルの行データは含まれず、数式だけを書き出したファイルはデプロイの単位ではありません。",
+   "topic": "ALMとパイプライン",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "取引先や顧客などの外部ユーザー向けの Web サイトを、ローコードで作成・ホスト・管理し、Dataverse のデータを活用したい。適したサービスはどれか。",
+   "choices": [
+    "Power Automate",
+    "AI Builder",
+    "Copilot Studio",
+    "Power Pages"
+   ],
+   "answer": 3,
+   "explanation": "Power Pages は、外部向けのビジネス Web サイトをローコードで作成・ホスト・管理する SaaS で、Dataverse に保存された共通のデータを利用できます。Power Automate はワークフローの自動化、AI Builder はアプリやフローへの AI 機能の追加、Copilot Studio は会話型エージェントの構築に使います。",
+   "topic": "Power Pagesの位置づけ",
+   "volatile": false,
+   "createdAt": "2026-11-09"
+  },
+  {
+   "q": "ローコードで、トピックや生成 AI を組み合わせた会話型のエージェントを構築・カスタマイズするためのサービスはどれか。",
+   "choices": [
+    "Power Pages",
+    "Microsoft Copilot Studio",
+    "AI Builder",
+    "Microsoft Dataverse"
+   ],
+   "answer": 1,
+   "explanation": "Microsoft Copilot Studio は、カスタム GPT、生成 AI プラグイン、手動のトピックの会話機能を組み合わせるローコードのツールで、Microsoft Copilot のカスタマイズや、独立したエージェントの構築に使います。Power Pages は外部向け Web サイト、AI Builder はアプリやフローへの AI 機能の追加、Dataverse はデータの保存に使います。",
+   "topic": "Copilot Studioの位置づけ",
+   "volatile": true,
+   "createdAt": "2026-11-09"
+  }
+ ]
+}
